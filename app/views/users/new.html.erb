@@ -1,0 +1,9 @@
+<%= flash[:notice] %>
+
+<% semantic_form_for @user do |form| -%>
+  <%= form.input :email %>
+  <%= form.input :password %>
+  <%= form.input :password_confirmation, :label => "Confirm password" %>
+
+  <%= form.commit_button "Sign Up" %>
+<% end -%>
