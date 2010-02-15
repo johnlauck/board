@@ -1,2 +1,3 @@
+default: --require features --color
 autotest: --require features --color --format progress --drb
 spork : --require features --drb --color
