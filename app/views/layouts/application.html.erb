@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>Job Board</title>
+</head>
+
+<body>
+  <%= flash[:notice] %>
+
+  <% if current_user -%>
+    <%= link_to "sign out", sign_out_path %>
+  <% else -%>
+    <%= link_to "sign in",  sign_in_path %>
+  <% end -%>
+
+  <%= yield %>
+</body>
+
+</html>
